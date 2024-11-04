@@ -12,7 +12,7 @@ import {
   WritableSignal
 } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {MultipleChoiceOption, Question} from '../../models/question/question';
+import {MultipleChoiceOption, Question} from '../../models/question/question.type';
 import {MatDivider} from '@angular/material/divider';
 import {MatCheckbox, MatCheckboxChange} from '@angular/material/checkbox';
 import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';

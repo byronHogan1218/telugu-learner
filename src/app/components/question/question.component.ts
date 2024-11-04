@@ -1,6 +1,6 @@
 import {Component, computed, inject, OnInit, signal, WritableSignal} from '@angular/core';
 import {ActivatedRoute, Router, RouterOutlet} from '@angular/router';
-import {Question, QuestionType} from '../../models/question/question';
+import {Question, QuestionType} from '../../models/question/question.type';
 import {MultipleChoiceComponent} from '../multiple-choice/multiple-choice.component';
 import {QuestionService} from '../../services/question.service';
 import {routeNames} from '../../app.routes';

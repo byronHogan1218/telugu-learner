@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Question, QuestionData} from '../models/question/question.type';
+import {Question, QuestionData} from '../models/question/question';
 import {data} from '../data/questions';
 
 @Injectable({

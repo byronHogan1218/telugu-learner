@@ -1,6 +1,6 @@
 # TeluguLearner
 
-[View here](https://byronhogan1218.github.io/telugu-learner) to see the website working
+[https://byronhogan1218.github.io/telugu-learner](https://byronhogan1218.github.io/telugu-learner) might need to copy paste to new tab
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.

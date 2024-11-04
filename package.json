@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/telugu-learner",
-    "predeploy": "ng build --configuration production --base-href=/",
+    "predeploy": "ng build --configuration-production --base-href https://byronhogan1218.github.io/telugu-learner/",
     "deploy": "npx gh-pages -d dist/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",

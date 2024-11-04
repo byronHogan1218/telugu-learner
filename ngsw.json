@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1730739895489,
+  "timestamp": 1730752188799,
   "index": "https://byronhogan1218.github.io/telugu-learner/index.html",
   "assetGroups": [
     {
@@ -15,7 +15,7 @@
         "https://byronhogan1218.github.io/telugu-learner/chunk-GTTMQ5CI.js",
         "https://byronhogan1218.github.io/telugu-learner/favicon.ico",
         "https://byronhogan1218.github.io/telugu-learner/index.html",
-        "https://byronhogan1218.github.io/telugu-learner/main-BYWOS5BT.js",
+        "https://byronhogan1218.github.io/telugu-learner/main-CL7UZQW5.js",
         "https://byronhogan1218.github.io/telugu-learner/manifest.webmanifest",
         "https://byronhogan1218.github.io/telugu-learner/polyfills-FFHMD2TL.js",
         "https://byronhogan1218.github.io/telugu-learner/styles-JVAYKK2Y.css"
@@ -55,8 +55,8 @@
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "https://byronhogan1218.github.io/telugu-learner/index.html": "0fe2083e4bde283df9f162c9260df7cc71a48cdc",
-    "https://byronhogan1218.github.io/telugu-learner/main-BYWOS5BT.js": "a9636e9b21405c6a778c32dd2f61116bc24c0448",
+    "https://byronhogan1218.github.io/telugu-learner/index.html": "74165dcb0bcb2b3699e18d80bf034c39e83f3a51",
+    "https://byronhogan1218.github.io/telugu-learner/main-CL7UZQW5.js": "67c5ce2a8307ff87c2423e1058354cade8acd1dc",
     "https://byronhogan1218.github.io/telugu-learner/manifest.webmanifest": "21518634cac3da80befd419aaeffa0556a8918e7",
     "https://byronhogan1218.github.io/telugu-learner/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "https://byronhogan1218.github.io/telugu-learner/styles-JVAYKK2Y.css": "2197b19a18b3c948d7fb77a59fc91603517a9f10"

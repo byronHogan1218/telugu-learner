@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1730733213254,
+  "timestamp": 1730739049550,
   "index": "https://byronhogan1218.github.io/telugu-learner/index.html",
   "assetGroups": [
     {
@@ -11,11 +11,11 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://byronhogan1218.github.io/telugu-learner/chunk-2BTHQNU2.js",
-        "https://byronhogan1218.github.io/telugu-learner/chunk-LSSRNCZT.js",
+        "https://byronhogan1218.github.io/telugu-learner/chunk-P7QNQZR6.js",
+        "https://byronhogan1218.github.io/telugu-learner/chunk-YERY67DU.js",
         "https://byronhogan1218.github.io/telugu-learner/favicon.ico",
         "https://byronhogan1218.github.io/telugu-learner/index.html",
-        "https://byronhogan1218.github.io/telugu-learner/main-7WS22YTH.js",
+        "https://byronhogan1218.github.io/telugu-learner/main-APTP6X4F.js",
         "https://byronhogan1218.github.io/telugu-learner/manifest.webmanifest",
         "https://byronhogan1218.github.io/telugu-learner/polyfills-FFHMD2TL.js",
         "https://byronhogan1218.github.io/telugu-learner/styles-BG7VZDZB.css"
@@ -44,8 +44,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://byronhogan1218.github.io/telugu-learner/chunk-2BTHQNU2.js": "4135c631fc061e557392d6b6aafd83d2c7d51f72",
-    "https://byronhogan1218.github.io/telugu-learner/chunk-LSSRNCZT.js": "efa4a381eabe931340699fbf340f947fab15feaa",
+    "https://byronhogan1218.github.io/telugu-learner/chunk-P7QNQZR6.js": "95a19213fa84c2b1ed44dfa8b5a6df9d66fb446b",
+    "https://byronhogan1218.github.io/telugu-learner/chunk-YERY67DU.js": "cc5023d6c45ee4548b9eedf280875b9774557d76",
     "https://byronhogan1218.github.io/telugu-learner/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
@@ -55,8 +55,8 @@
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "https://byronhogan1218.github.io/telugu-learner/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "https://byronhogan1218.github.io/telugu-learner/index.html": "681d4b28afbb029b127e3352c39443ab2c5aaa5c",
-    "https://byronhogan1218.github.io/telugu-learner/main-7WS22YTH.js": "0d5d079ab69ac702f325a50668a429178fcfaa5c",
+    "https://byronhogan1218.github.io/telugu-learner/index.html": "9f918eb62f5271f24683ca4623eb842c89f04599",
+    "https://byronhogan1218.github.io/telugu-learner/main-APTP6X4F.js": "3d8f336b1be57017f2c7075d04457ca31050eed0",
     "https://byronhogan1218.github.io/telugu-learner/manifest.webmanifest": "21518634cac3da80befd419aaeffa0556a8918e7",
     "https://byronhogan1218.github.io/telugu-learner/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "https://byronhogan1218.github.io/telugu-learner/styles-BG7VZDZB.css": "15346a46b9213439bbf80f445f873b65ce9fc41c"

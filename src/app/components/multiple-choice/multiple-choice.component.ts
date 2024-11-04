@@ -1,4 +1,16 @@
-import {Component, computed, inject, input, OnInit, output, signal, WritableSignal} from '@angular/core';
+import {
+  Component,
+  computed,
+  ElementRef,
+  inject,
+  input,
+  OnInit,
+  output,
+  QueryList,
+  signal,
+  ViewChildren,
+  WritableSignal
+} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {MultipleChoiceOption, Question} from '../../models/question/question';
 import {MatDivider} from '@angular/material/divider';
@@ -17,6 +29,7 @@ import {MatRadioButton, MatRadioChange, MatRadioGroup} from '@angular/material/r
 export class MultipleChoiceComponent implements OnInit {
   public myForm: FormGroup;
 
+  @ViewChildren("checkboxes") checkboxes: QueryList<ElementRef> | undefined;
   public shouldShowAnswer = signal(false)
   public hintIndex = signal(0)
   public activeHints: WritableSignal<{ index: number, text: string }[]> = signal([])
@@ -83,6 +96,13 @@ export class MultipleChoiceComponent implements OnInit {
     this.shouldShowAnswer.set(false)
     this.hintIndex.set(0)
     this.activeHints.set([])
+    for (const control of Object.values(this.myForm.controls)) {
+      control.setValue(false)
+    }
+    this.checkboxes?.forEach((element: ElementRef<MatCheckbox>) => {
+      // This is a MatCheckbox under the hood so we can access the checked property here
+      (element as any).checked = false;
+    });
     this.done.emit();
   }
 

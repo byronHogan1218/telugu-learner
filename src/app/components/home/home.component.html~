@@ -6,6 +6,6 @@
     <button mat-button (click)="start()">Start at random location</button>
   </div>
   <div>
-    <button mat-button (click)="startRandom()">Completely Random</button>
+    <button mat-button (click)="startRandom()">Start at random location</button>
   </div>
 </div>

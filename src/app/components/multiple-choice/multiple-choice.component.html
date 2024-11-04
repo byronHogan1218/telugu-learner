@@ -25,7 +25,7 @@
       <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
         @for (choice of data().choices; track choice.value.id) {
           <div>
-            <mat-checkbox [checked]="false" [value]="choice.value.id.toString()"
+            <mat-checkbox #checkboxes [checked]="false" [value]="choice.value.id.toString()"
                           (change)="updateState($event, choice.value.id)">
               {{ choice.value.text }}
               @if (choice.value.pronunciation) {
@@ -37,19 +37,17 @@
       </form>
     } @else {
       <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-        <mat-radio-group>
           @for (choice of data().choices; track choice.value.id) {
             <div>
-              <mat-radio-button [checked]="false" [value]="choice.value.id.toString()"
+              <mat-checkbox #checkboxes [checked]="false" [value]="choice.value.id.toString()"
                                 (change)="updateState($event, choice.value.id)">
                 {{ choice.value.text }}
                 @if (choice.value.pronunciation) {
                   ({{choice.value.pronunciation}})
                 }
-              </mat-radio-button>
+              </mat-checkbox>
             </div>
           }
-        </mat-radio-group>
       </form>
     }
 

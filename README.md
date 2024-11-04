@@ -1,6 +1,6 @@
 # TeluguLearner
 
-[View here](https://byronhogan1218.github.io/telugu-learner/home) to see the website working
+[View here](https://byronhogan1218.github.io/telugu-learner) to see the website working
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.

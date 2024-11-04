@@ -4,6 +4,7 @@ import {Question, QuestionType} from '../../models/question/question';
 import {MultipleChoiceComponent} from '../multiple-choice/multiple-choice.component';
 import {QuestionService} from '../../services/question.service';
 import {routeNames} from '../../app.routes';
+import {getRandomInt, HomeComponent} from '../home/home.component';
 
 @Component({
   selector: 'll-question',
@@ -38,7 +39,12 @@ export class QuestionComponent implements OnInit {
   }
 
   public handleQuestionEnd(): void {
-    this.questionId = this.questionId! + 1;
+    let newId = HomeComponent.proceedRandomly ? getRandomInt(1, this.questionService.getQuestionLength()) : this.questionId! + 1;
+    while (newId === this.questionId) {
+      newId = getRandomInt(1, this.questionService.getQuestionLength());
+    }
+    this.questionId = newId;
+    console.log('randomly picking', HomeComponent.proceedRandomly, 'new id is', this.questionId);
     if(this.questionId > this.questionService.getQuestionLength()) {
       this.questionId = 1;
     }

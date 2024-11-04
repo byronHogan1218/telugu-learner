@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/telugu-learner",
-    "predeploy": "ng build --configuration-production --base-href https://byronhogan1218.github.io/telugu-learner/",
+    "predeploy": "ng build --configuration production --base-href https://byronhogan1218.github.io/telugu-learner/",
     "deploy": "npx gh-pages -d dist/",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -14,10 +13,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
+    "@angular/cdk": "^18.2.11",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
+    "@angular/material": "^18.2.11",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
@@ -37,7 +38,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.2",
-    "http-server": "^14.1.1"
+    "typescript": "~5.5.2"
   }
 }

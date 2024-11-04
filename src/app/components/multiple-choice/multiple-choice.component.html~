@@ -1,0 +1,63 @@
+<div>
+  <div>
+    <strong>
+      {{ inputQuestion().id + 1 }}.
+    </strong>
+    {{ data().question }}
+  </div>
+  <mat-divider></mat-divider>
+  <div style="padding-top: 5px; padding-bottom: 5px">
+    @if (shouldShowAnswer()) {
+      <div>
+        The following is the answer: {{ getAnswersAsString() }}
+      </div>
+    }
+    @for (hint of activeHints(); track hint.index) {
+      <div>
+        • {{ hint.text }}
+      </div>
+    }
+    @if (hasMultipleAnswers()) {
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        @for (choice of data().choices; track choice.value.id) {
+          <div>
+            <mat-checkbox [checked]="false" [value]="choice.value.id.toString()"
+                          (change)="updateState($event, choice.value.id)">{{ choice.value.text }}
+            </mat-checkbox>
+          </div>
+        }
+      </form>
+    } @else {
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <mat-radio-group>
+          @for (choice of data().choices; track choice.value.id) {
+            <div>
+              <mat-radio-button #radioButton [checked]="false" [value]="choice.value.id.toString()"
+                                (change)="updateState($event, choice.value.id)">{{ choice.value.text }}
+              </mat-radio-button>
+            </div>
+          }
+        </mat-radio-group>
+      </form>
+    }
+
+  </div>
+  <mat-divider></mat-divider>
+  <div class="container">
+    <div class="vertical-center">
+      <div style="padding-top: 15px">
+        <button mat-raised-button (click)="onSubmit()">Submit</button>
+      </div>
+      @if (hasHint()) {
+        <div style="padding-top: 5px">
+          <button mat-stroked-button (click)="showHint()">{{ hintIndex() > 0 ? 'Show Another Hint' : 'Show Hint' }}
+          </button>
+        </div>
+      }
+      <div style="padding-top: 5px">
+        <button mat-stroked-button (click)="showAnswer()">{{ shouldShowAnswer() ? 'Hide Answer' : 'Show Answer' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

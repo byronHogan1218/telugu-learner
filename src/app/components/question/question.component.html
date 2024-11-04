@@ -1,0 +1,9 @@
+@if (question() === undefined) {
+  LOADING
+} @else {
+  @switch (definedQuestion().questionType) {
+    @case (QuestionType.multipleChoice) {
+      <ll-multiple-choice [inputQuestion]="definedQuestion()" (done)="handleQuestionEnd()"></ll-multiple-choice>
+    }
+  }
+}

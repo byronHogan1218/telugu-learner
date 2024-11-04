@@ -135,7 +135,7 @@ export class MultipleChoiceComponent implements OnInit {
   }
 
   private openSnackBar(message: string, action?: string) {
-    this.snackBarService.open(message, action);
+    this.snackBarService.open(message, action, {duration: 2000});
   }
 
   private randomizeArrayWithIndices<T>(array: T[]): { originalIndex: number, value: T }[] {

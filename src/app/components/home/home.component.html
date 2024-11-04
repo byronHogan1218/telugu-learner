@@ -1,11 +1,21 @@
 <div>
-  <div>
-    <button mat-button (click)="goToQuestion()">Go to Question</button>
+  <h5>
+    This application is meant to help learn Telugu
+  </h5>
+  <mat-divider></mat-divider>
+  <div style="padding-bottom: 10px; padding-top: 15px;">
+    This will be a linear question quiz
+    <br>
+    <button mat-stroked-button (click)="goToQuestion()">Go to Question</button>
   </div>
-  <div>
-    <button mat-button (click)="start()">Start at random location</button>
+  <div style="padding-bottom: 10px;">
+    This will be a linear question quiz that will start at a random location
+    <br>
+    <button mat-stroked-button (click)="start()">Start at random location</button>
   </div>
-  <div>
-    <button mat-button (click)="startRandom()">Completely Random</button>
+  <div style="padding-bottom: 10px;">
+    This will be a random order question quiz, it may repeat ask questions
+    <br>
+    <button mat-stroked-button (click)="startRandom()">Completely Random</button>
   </div>
 </div>

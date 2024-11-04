@@ -3,6 +3,7 @@ import {Router, RouterOutlet} from '@angular/router';
 import {MatButton} from '@angular/material/button';
 import {routeNames} from '../../app.routes';
 import { QuestionService } from '../../services/question.service';
+import {MatDivider} from '@angular/material/divider';
 
 export function getRandomInt(min: number, max: number): number {
   min = Math.ceil(min);
@@ -13,7 +14,7 @@ export function getRandomInt(min: number, max: number): number {
 @Component({
   selector: 'll-home',
   standalone: true,
-  imports: [RouterOutlet, MatButton],
+  imports: [RouterOutlet, MatButton, MatDivider],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

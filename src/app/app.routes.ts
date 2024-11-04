@@ -11,4 +11,5 @@ export const routes: Routes = [
   { path: routeNames.home, component: HomeComponent },
   { path: `${routeNames.question}/:id`, component: QuestionComponent },
   { path: '', redirectTo: routeNames.home, pathMatch: 'full' },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];

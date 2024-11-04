@@ -94,6 +94,7 @@ export class MultipleChoiceComponent implements OnInit {
     for (let i = 0; i < controlValues.length; i++) {
       const expectedValue = answerArray.includes(i);
       if (controlValues[i] !== expectedValue) {
+        this.resetCheckboxes()
         this.openSnackBar('Incorrect answer selected ❌')
         return
       }
@@ -103,6 +104,11 @@ export class MultipleChoiceComponent implements OnInit {
     this.shouldShowAnswer.set(false)
     this.hintIndex.set(0)
     this.activeHints.set([])
+    this.resetCheckboxes()
+    this.done.emit();
+  }
+
+  private resetCheckboxes(): void {
     for (const control of Object.values(this.myForm.controls)) {
       control.setValue(false)
     }
@@ -110,7 +116,6 @@ export class MultipleChoiceComponent implements OnInit {
       // This is a MatCheckbox under the hood so we can access the checked property here
       (element as any).checked = false;
     });
-    this.done.emit();
   }
 
   updateState(event: MatCheckboxChange | MatRadioChange, id: number) {

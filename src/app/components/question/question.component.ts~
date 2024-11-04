@@ -35,6 +35,7 @@ export class QuestionComponent implements OnInit {
     }
     this.questionId = possibleNumber;
     this.question.set(this.questionService.getQuestion(this.questionId));
+    console.log('saved id is', this.questionId);
   }
 
   public handleQuestionEnd(): void {
@@ -43,6 +44,7 @@ export class QuestionComponent implements OnInit {
       newId = getRandomInt(1, this.questionService.getQuestionLength());
     }
     this.questionId = newId;
+    console.log('randomly picking', HomeComponent.proceedRandomly, 'new id is', this.questionId);
     if(this.questionId > this.questionService.getQuestionLength()) {
       this.questionId = 1;
     }

@@ -1,5 +1,5 @@
 <div>
-  <div>
+  <div style="padding-top: 5px; padding-bottom: 10px">
     <strong>
       {{ inputQuestion().id + 1 }}.
     </strong>
@@ -59,12 +59,12 @@
         <button mat-raised-button (click)="onSubmit()">Submit</button>
       </div>
       @if (hasHint()) {
-        <div style="padding-top: 5px">
+        <div style="padding-top: 8px">
           <button mat-stroked-button (click)="showHint()">{{ hintIndex() > 0 ? 'Show Another Hint' : 'Show Hint' }}
           </button>
         </div>
       }
-      <div style="padding-top: 5px">
+      <div style="padding-top: 8px">
         <button mat-stroked-button (click)="showAnswer()">{{ shouldShowAnswer() ? 'Hide Answer' : 'Show Answer' }}
         </button>
       </div>

@@ -1,5 +1,5 @@
 <div>
-  <div>
+  <div style="padding-top: 5px; padding-bottom: 10px">
     <strong>
       {{ inputQuestion().id + 1 }}.
     </strong>
@@ -37,7 +37,6 @@
       </form>
     } @else {
       <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-<!--        <mat-radio-group>-->
           @for (choice of data().choices; track choice.value.id) {
             <div>
               <mat-checkbox #checkboxes [checked]="false" [value]="choice.value.id.toString()"
@@ -49,7 +48,6 @@
               </mat-checkbox>
             </div>
           }
-<!--        </mat-radio-group>-->
       </form>
     }
 

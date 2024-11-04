@@ -29,8 +29,7 @@
                           (change)="updateState($event, choice.value.id)">
               {{ choice.value.text }}
               @if (choice.value.pronunciation) {
-                <br>
-                {{choice.value.pronunciation}}
+                ({{choice.value.pronunciation}})
               }
             </mat-checkbox>
           </div>
@@ -45,8 +44,7 @@
                                 (change)="updateState($event, choice.value.id)">
                 {{ choice.value.text }}
                 @if (choice.value.pronunciation) {
-                  <br>
-                  {{choice.value.pronunciation}}
+                  ({{choice.value.pronunciation}})
                 }
               </mat-radio-button>
             </div>

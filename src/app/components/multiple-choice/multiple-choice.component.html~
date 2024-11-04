@@ -4,6 +4,10 @@
       {{ inputQuestion().id + 1 }}.
     </strong>
     {{ data().question }}
+    @if(data().pronunciation) {
+      <br>
+      {{data().pronunciation}}
+    }
   </div>
   <mat-divider></mat-divider>
   <div style="padding-top: 5px; padding-bottom: 5px">
@@ -22,7 +26,12 @@
         @for (choice of data().choices; track choice.value.id) {
           <div>
             <mat-checkbox [checked]="false" [value]="choice.value.id.toString()"
-                          (change)="updateState($event, choice.value.id)">{{ choice.value.text }}
+                          (change)="updateState($event, choice.value.id)">
+              {{ choice.value.text }}
+              @if (choice.value.pronunciation) {
+                <br>
+                {{choice.value.pronunciation}}
+              }
             </mat-checkbox>
           </div>
         }
@@ -32,8 +41,13 @@
         <mat-radio-group>
           @for (choice of data().choices; track choice.value.id) {
             <div>
-              <mat-radio-button #radioButton [checked]="false" [value]="choice.value.id.toString()"
-                                (change)="updateState($event, choice.value.id)">{{ choice.value.text }}
+              <mat-radio-button [checked]="false" [value]="choice.value.id.toString()"
+                                (change)="updateState($event, choice.value.id)">
+                {{ choice.value.text }}
+                @if (choice.value.pronunciation) {
+                  <br>
+                  {{choice.value.pronunciation}}
+                }
               </mat-radio-button>
             </div>
           }

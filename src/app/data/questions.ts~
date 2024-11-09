@@ -112,32 +112,6 @@ const multipleChoiceQuestionData: QuestionData[] = [
     },
     hint: ['Use in english- Where are we going tomorrow?'],
   },
-  {
-    questionType: QuestionType.multipleChoice,
-    questionData: {
-      question: 'What does "Ellundu" (l un do) mean in English? Use: Ellundu ekkadiki velthunam',
-      choices: [
-        {
-          id: 0,
-          text: 'day after tomorrow',
-        },
-        {
-          id: 1,
-          text: randomEnglishWorkGenerator(),
-        },
-        {
-          id: 2,
-          text: randomEnglishWorkGenerator(),
-        },
-        {
-          id: 3,
-          text: randomEnglishWorkGenerator(),
-        }
-      ],
-      answerIndexes: [0],
-    },
-    hint: ['Use in english- Where are we going day after tomorrow?'],
-  },
 ]
 const matchingQuestionData: QuestionData[] = []
 const fillInTheBlankQuestionData: QuestionData[] = []

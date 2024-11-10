@@ -115,7 +115,7 @@ const multipleChoiceQuestionData: QuestionData[] = [
   {
     questionType: QuestionType.multipleChoice,
     questionData: {
-      question: 'What does "Ellundu" (l un do) mean in English? Use: Ellundu ekkadiki velthunam',
+      question: 'What does "Ellundu" (L oon do) mean in English? Use: Ellundu ekkadiki velthunam',
       choices: [
         {
           id: 0,
@@ -137,6 +137,32 @@ const multipleChoiceQuestionData: QuestionData[] = [
       answerIndexes: [0],
     },
     hint: ['Use in english- Where are we going day after tomorrow?'],
+  },
+  {
+    questionType: QuestionType.multipleChoice,
+    questionData: {
+      question: 'What does "Vasthava" (Wa s tha wa) mean in English?m',
+      choices: [
+        {
+          id: 0,
+          text: 'Will you come?',
+        },
+        {
+          id: 1,
+          text: "Are you hungry?",
+        },
+        {
+          id: 2,
+          text: "Where is the bathroom?",
+        },
+        {
+          id: 3,
+          text: "Why do you need that?",
+        }
+      ],
+      answerIndexes: [0],
+    },
+    hint: [],
   },
 ]
 const matchingQuestionData: QuestionData[] = []

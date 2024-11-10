@@ -36,6 +36,6 @@ export class HomeComponent {
 
   public startRandom(): void {
     HomeComponent.proceedRandomly = true;
-    this.router.navigate([routeNames.question, getRandomInt(1, this.questionService.getQuestionLength() +1)]);
+    this.router.navigate([routeNames.question, getRandomInt(1, this.questionService.getQuestionLength())]);
   }
 }

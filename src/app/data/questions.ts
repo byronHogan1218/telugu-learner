@@ -141,7 +141,7 @@ const multipleChoiceQuestionData: QuestionData[] = [
   {
     questionType: QuestionType.multipleChoice,
     questionData: {
-      question: 'What does "Vasthava" (Wa s tha wa) mean in English?m',
+      question: 'What does "Vasthava" (Wa s tha wa) mean in English?',
       choices: [
         {
           id: 0,
@@ -163,6 +163,58 @@ const multipleChoiceQuestionData: QuestionData[] = [
       answerIndexes: [0],
     },
     hint: [],
+  },
+  {
+    questionType: QuestionType.multipleChoice,
+    questionData: {
+      question: 'What does "Nenu" (nay new) mean in English? Use: Nenu tintuna',
+      choices: [
+        {
+          id: 0,
+          text: 'Me/I',
+        },
+        {
+          id: 1,
+          text: randomEnglishWorkGenerator(),
+        },
+        {
+          id: 2,
+          text: randomEnglishWorkGenerator(),
+        },
+        {
+          id: 3,
+          text: randomEnglishWorkGenerator(),
+        }
+      ],
+      answerIndexes: [0],
+    },
+    hint: ['Use in english- I am eating'],
+  },
+  {
+    questionType: QuestionType.multipleChoice,
+    questionData: {
+      question: 'What does "Nivu" (noo voo) mean in English? Use: Nivu em chesthnavu',
+      choices: [
+        {
+          id: 0,
+          text: 'You',
+        },
+        {
+          id: 1,
+          text: randomEnglishWorkGenerator(),
+        },
+        {
+          id: 2,
+          text: randomEnglishWorkGenerator(),
+        },
+        {
+          id: 3,
+          text: randomEnglishWorkGenerator(),
+        }
+      ],
+      answerIndexes: [0],
+    },
+    hint: ['Use in english- What are you doing?'],
   },
 ]
 const matchingQuestionData: QuestionData[] = []

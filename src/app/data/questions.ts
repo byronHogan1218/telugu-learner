@@ -171,11 +171,11 @@ const multipleChoiceQuestionData: QuestionData[] = [
       choices: [
         {
           id: 0,
-          text: 'Me/I',
+          text: 'Me',
         },
         {
           id: 1,
-          text: randomEnglishWorkGenerator(),
+          text: 'I',
         },
         {
           id: 2,
@@ -186,7 +186,7 @@ const multipleChoiceQuestionData: QuestionData[] = [
           text: randomEnglishWorkGenerator(),
         }
       ],
-      answerIndexes: [0],
+      answerIndexes: [0,1],
     },
     hint: ['Use in english- I am eating'],
   },
@@ -215,6 +215,32 @@ const multipleChoiceQuestionData: QuestionData[] = [
       answerIndexes: [0],
     },
     hint: ['Use in english- What are you doing?'],
+  },
+  {
+    questionType: QuestionType.multipleChoice,
+    questionData: {
+      question: 'What does "Burra" (burr ra) mean in English?',
+      choices: [
+        {
+          id: 0,
+          text: 'Mind',
+        },
+        {
+          id: 1,
+          text: randomEnglishWorkGenerator(),
+        },
+        {
+          id: 2,
+          text: randomEnglishWorkGenerator(),
+        },
+        {
+          id: 3,
+          text: randomEnglishWorkGenerator(),
+        }
+      ],
+      answerIndexes: [0],
+    },
+    hint: [],
   },
 ]
 const matchingQuestionData: QuestionData[] = []
